@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Avenir:wght:700");
+@import url("https://fonts.googleapis.com/css2?family=Avenir:wght@400");
 
 /*
 ! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
@@ -627,8 +627,8 @@ video {
   left: 0px;
 }
 
-.right-0{
-  right: 0px;
+.right-5{
+  right: 1.25rem;
 }
 
 .top-0{
@@ -713,8 +713,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.ml-0{
+  margin-left: 0px;
+}
+
 .ml-3{
   margin-left: 0.75rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
 }
 
 .ml-40{
@@ -873,8 +881,8 @@ video {
   width: 2.5rem;
 }
 
-.w-40{
-  width: 10rem;
+.w-32{
+  width: 8rem;
 }
 
 .w-5{
@@ -885,10 +893,6 @@ video {
   width: 1.5rem;
 }
 
-.w-60{
-  width: 15rem;
-}
-
 .w-80{
   width: 20rem;
 }
@@ -897,12 +901,17 @@ video {
   width: 100%;
 }
 
+.w-min{
+  width: -moz-min-content;
+  width: min-content;
+}
+
 .max-w-sm{
   max-width: 24rem;
 }
 
-.flex-0{
-  flex: 0 0 auto;
+.flex-1-1-auto{
+  flex: 1 1 auto;
 }
 
 .flex-shrink{
@@ -1797,6 +1806,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-darkGray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 59 64 / var(--tw-bg-opacity));
+}
+
 .bg-lightGray{
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
@@ -2607,6 +2621,10 @@ video {
 
   .md\:h-52{
     height: 13rem;
+  }
+
+  .md\:w-32{
+    width: 8rem;
   }
 
   .md\:items-center{

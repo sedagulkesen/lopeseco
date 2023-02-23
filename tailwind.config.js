@@ -29,7 +29,9 @@ module.exports = {
         'menu': "url('/images/menu_bg.svg')",
       },
       flex: {
-        '0': '0 0 auto'
+        '0-0-auto': '0 0 auto',
+        '1-1-auto':'1 1 auto',
+        '1-0-auto':'1 0 auto',
       },
       backdropBlur: {
         sm: '4px',

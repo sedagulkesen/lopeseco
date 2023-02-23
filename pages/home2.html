@@ -7,134 +7,29 @@
     <link href="../dist/output.css" rel="stylesheet" />
     <title>LOPESECO DESIGN STUDIO</title>
     <link rel="icon" type="image/png" href="../images/lopeseco_logo.png" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>Lopeseco Design Studio</title>
   </head>
 
-  <body class="flex h-full">
-    <aside
-      id="menu"
-      class="top-0 w-60 -ml-40 flex flex-0 flex-col bg-repeat bg-contain duration-700"
-      style="background-image: url('../images/menu_pattern_30.png')"
-    >
-      <a
-        href="javascript:void(0)"
-        onclick="closeMenu()"
-        class="text-right px-4 hover:text-pinkRed h-6 w-6"
-        >&times;</a>
-        <!-- <button type="button" class="right-0 px-4 hover:text-pinkRed">
-            <span onclick="closeMenu()">
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </span>
-          </button> -->
-        <div class="sticky top-0 flex flex-col font-bold text-4.5xl text-darkGray px-4 pt-56 -space-y-6 font-avenir"
+  <body class="flex h-full bg-darkGray">
+        <div id="menu"class="sticky top-0 left-0 flex flex-col font-bold text-4.5xl text-darkGray px-4 pt-56 -space-y-6 bg-repeat bg-contain duration-700" style="width:0px; transform:translateX(-128px); background-image: url('../images/menu_pattern_30.png')"
       >
+      <!-- <button type="button" class="right-5 ml-4 text-darkGray hover:text-pinkRed">
+        <span onclick="closeMenu()">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </span>
+      </button> -->
+      <a href="javascript:void(0)" class="text-darkGray hover:text-pinkRed right-5 ml-4" onclick="closeMenu()">&times;</a>
         <a href="#" class="hover:text-pinkRed">accueil</a>
         <a href="#" class="hover:text-pinkRed">services</a>
         <a href="#" class="hover:text-pinkRed">equipe</a>
         <a href="#" class="hover:text-pinkRed">contact</a>
       </div>
-    </aside>
-    <main class="flex" id="main">
-      <div id="overlay" class="fixed h-full bg-lightGray opacity-70 w-80">
-        <h1>Big Title Here</h1>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
-      </div>
-      <div class="container py-2 mx-auto">
-        <div class="flex flex-wrap -my-1 md:-my-2">
-          <div class="flex flex-wrap w-1/2 bg-fixed">
-            <div class="w-full group">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/1.jpeg"
-                data-tooltip-placement="top"
-              />
-              <span
-                class="tooltip-text bg-black text-lightGray p-3 -mt-32 hidden group-hover:block text-center py-2 px-6 z-50 fixed"
-                >Look at this!</span
-              >
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/2.jpeg"
-              />
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/3.jpeg"
-              />
-            </div>
-          </div>
-          <div class="flex flex-wrap w-1/2">
-            <div class="w-full">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/4.jpeg"
-              />
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/5.jpeg"
-              />
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/6.jpeg"
-              />
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/7.jpeg"
-              />
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/8.jpeg"
-              />
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/9.jpeg"
-              />
-            </div>
-            <div class="w-1/2">
-              <img
-                alt="gallery"
-                class="block object-cover object-center w-full h-full hover:opacity-25"
-                src="../images/10.jpeg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <aside
+    <div class="flex" id="page">
+      <div
       id="sidebar"
-      class="fixed top-0 left-0 z-40 p-5 bg-white w-40 h-screen"
+      class="fixed top-0 left-0 p-5 bg-white md:w-32 sm:20 h-screen"
     >
       <a href="#" class="flex items-center justify-center mb-10">
         <img
@@ -217,7 +112,100 @@
           <span class="sr-only">LinkedIn page</span>
         </a>
       </div>
-    </aside>
+    </div>
+      <!-- <div id="overlay" class="fixed h-full bg-lightGray opacity-70 w-80">
+        <h1>Big Title Here</h1>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </div> -->
+      <div id="content" class="bg-darkGray">
+        <div class="flex flex-wrap -my-1 md:-my-2">
+          <div class="flex flex-wrap w-1/2 bg-fixed">
+            <div class="w-full group">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/1.jpeg"
+                data-tooltip-placement="top"
+              />
+              <span
+                class="tooltip-text bg-black text-lightGray p-3 -mt-32 hidden group-hover:block text-center py-2 px-6 z-50 fixed"
+                >Look at this!</span
+              >
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/2.jpeg"
+              />
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/3.jpeg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="w-full">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/4.jpeg"
+              />
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/5.jpeg"
+              />
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/6.jpeg"
+              />
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/7.jpeg"
+              />
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/8.jpeg"
+              />
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/9.jpeg"
+              />
+            </div>
+            <div class="w-1/2">
+              <img
+                alt="gallery"
+                class="block object-cover object-center w-full h-full hover:opacity-25"
+                src="../images/10.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Javascript code -->
     <script>
@@ -228,15 +216,15 @@
 
       // show the menu
       function openMenu() {
-        menu.classList.remove("-ml-40");
-        menu.classList.add("ml-40");
-
+        menu.style.transform='translateX(128px)';
+        menu.style.width='250px';
       }
 
       // make the menu "go away"
       function closeMenu() {
-        menu.classList.remove("ml-40");
-        menu.classList.add("-ml-40");
+        menu.style.transform='translateX(-128px)';
+        menu.style.width='0px';
+
       }
     </script>
   </body>
