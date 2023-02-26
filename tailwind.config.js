@@ -38,7 +38,8 @@ module.exports = {
       },
       height:{
         'top-banner':'calc(100vh-50px)',
-        '100vh':'100vh'
+        '100vh':'100vh',
+        200:'200px'
       }, 
       translate:{
         'minus-100':'translateX(-100)',
@@ -46,7 +47,8 @@ module.exports = {
       }, 
       inset:{
         70:'70px',
-        150:'150px',        
+        150:'150px',
+        '40%':'40%',
       },
       width:{
         'top-banner-100':'calc(100%-100px)',
@@ -59,9 +61,13 @@ module.exports = {
         400:'400px',
         500:'500px',
         550:'550px'
-
       },
-     
+      spacing:{
+        220:'220px',
+        260:'260px',
+        280:'280px'
+      }
+  
     },
   },
   plugins: [],
