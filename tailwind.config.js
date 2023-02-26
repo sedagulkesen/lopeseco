@@ -49,13 +49,17 @@ module.exports = {
         150:'150px',        
       },
       width:{
-        'top-banner':'calc(100%-150px)',
+        'top-banner-100':'calc(100%-100px)',
+        'top-banner-150':'calc(100%-150px)',
         100:'100px',
         150:'150px',
         250:'250px',
         300:'300px',
         350:'350px',
-        500:'500px'
+        400:'400px',
+        500:'500px',
+        550:'550px'
+
       },
      
     },
