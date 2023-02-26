@@ -12,7 +12,7 @@
 
   <body class="bg-darkGray">
     <section id="top-banner" class="relative left-100 flex h-100vh">
-      <div id="top-banner-overlay" class="fixed top-0 bottom-0 flex flex-col p-5 bg-black bg-opacity-70 w-300 transition-all duration-500 text-white" style="transform:translateX(100px)">
+      <div id="top-banner-overlay" class="fixed top-0 bottom-0 flex flex-col p-5 bg-black bg-opacity-30 w-300 transition-all duration-500 text-white font-avenir" style="transform:translateX(100px)">
         <h1 class="md:mt-260">Big Title Here</h1>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
@@ -34,6 +34,8 @@
           </div>
           <div class="w-1/2">
             <img
+            onmouseover="onMouseOverImage()"
+            onmouseout="onMouseOutImage()"
               alt="gallery"
               class="block object-cover object-center w-full h-full hover:opacity-25"
               src="../images/2.jpeg"
@@ -102,20 +104,20 @@
     </div>
     </section>
     <nav id="top-nav">
-      <div id="menu-wrapper" class="fixed top-0 left-0 bottom-0 w-150 transform duration-700 text-black bg-repeat bg-contain font-avenir text-4xl font-bold" style="transform:translateX(-200px); background-image: url('../images/menu_pattern_30.png')">
+      <div id="menu-wrapper" class="fixed top-0 left-0 bottom-0 w-150 transform duration-700 text-black bg-repeat bg-contain font-avenir text-2xl font-bold" style="transform:translateX(-200px); background-image: url('../images/menu_pattern_30.png')">
         <button id="menu-close" onclick="closeMenu()" class="absolute right-5 ml-5 top-0 w-5 h-5 mt-2" type="button" aria-label="close menu">✕</button>
         <ul id="menu" class="left-0 transition-opacity duration-500 px-2 md:pt-280" style="opacity:0;">
           <li>
-            <a href="" class="hover:text-gray-400 hover:line-through">accueil</a>
+            <a href="" class="hover:text-gray-400 hover:line-through uppercase">accueil</a>
           </li>
           <li>
-            <a href="" class="hover:text-gray-400 hover:line-through">services</a>
+            <a href="" class="hover:text-gray-400 hover:line-through uppercase">services</a>
           </li>
           <li>
-            <a href="" class="hover:text-gray-400 hover:line-through">equipe</a>
+            <a href="" class="hover:text-gray-400 hover:line-through uppercase">equipe</a>
           </li>
           <li>
-            <a href="" class="hover:text-gray-400 hover:line-through">contact</a>
+            <a href="" class="hover:text-gray-400 hover:line-through uppercase">contact</a>
           </li>
         </ul>
       </div>
@@ -203,19 +205,14 @@
       }
 
       function onMouseOverImage(){
-        topBannerOverlay.classList.remove("bg-opacity-70")
-        topBannerOverlay.classList.add("bg-opacity-90")
-
+        topBannerOverlay.classList.remove("bg-opacity-30")
+        topBannerOverlay.classList.add("bg-opacity-80")
       }
 
       function onMouseOutImage(){
-        topBannerOverlay.classList.remove("bg-opacity-90")
-        topBannerOverlay.classList.add("bg-opacity-70")
-
-
-
+        topBannerOverlay.classList.remove("bg-opacity-80")
+        topBannerOverlay.classList.add("bg-opacity-30")
       }
-
  
     </script>
   </body>
