@@ -10,12 +10,13 @@
   </head>
 
   <body class="bg-darkGray">
-    <section id="top-banner" class="relative left-100 flex h-100vh">
-      <div id="top-banner-overlay" class="fixed top-0 bottom-0 flex flex-col p-5 bg-black bg-opacity-30 w-300 transition-all duration-500 text-white font-avenir" style="transform:translateX(100px)">
-        <h1 class="md:mt-260">Big Title Here</h1>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- left-24 -->
+    <section id="top-banner" class="relative flex h-100vh">   
+      <div id="top-banner-overlay" class="fixed top-0 bottom-0 flex flex-col bg-black bg-opacity-30 md:w-72 transition-all duration-500 text-white font-avenir" style="transform:translateX(96px)">
+        <h1 class="md:mx-4 md:mt-72">Big Title Here</h1>
+        <p class="md:mx-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div id="gallery" class="flex flex-wrap -my-1 md:-my-2 -mx-10">
+      <div id="gallery" class="flex flex-wrap md:-my-2 md:-mx-10">
         <div class="flex flex-wrap w-1/2 bg-fixed">
           <div class="w-full group">
             <img
@@ -26,10 +27,10 @@
               src="../images/1.jpeg"
               data-tooltip-placement="top"
             />
-            <span
+            <!-- <span
               class="tooltip-text bg-black text-lightGray p-3 -mt-32 hidden group-hover:block text-center py-2 px-6 z-50 fixed"
               >Look at this!</span
-            >
+            > -->
           </div>
           <div class="w-1/2">
             <img
@@ -103,9 +104,9 @@
     </div>
     </section>
     <nav id="top-nav">
-      <div id="menu-wrapper" class="fixed top-0 left-0 bottom-0 w-150 transform duration-700 text-black bg-repeat bg-contain font-avenir text-2xl font-bold" style="transform:translateX(-200px); background-image: url('../images/menu_pattern_30.png')">
+      <div id="menu-wrapper" class="fixed top-0 left-0 bottom-0 md:w-36 transform duration-700 text-black bg-repeat bg-contain font-avenir text-2xl font-bold" style="transform:translateX(-200px); background-image: url('../images/menu_pattern_30.png')">
         <button id="menu-close" onclick="closeMenu()" class="absolute right-5 ml-5 top-0 w-5 h-5 mt-2" type="button" aria-label="close menu">✕</button>
-        <ul id="menu" class="left-0 transition-opacity duration-500 px-2 md:pt-280" style="opacity:0;">
+        <ul id="menu" class="left-0 transition-opacity duration-500 px-4 md:pt-72" style="opacity:0;">
           <li>
             <a href="" class="hover:text-gray-400 hover:line-through uppercase">accueil</a>
           </li>
@@ -120,15 +121,15 @@
           </li>
         </ul>
       </div>
-      <div id="fixed-menu" class="fixed top-0 bottom-0 flex flex-col w-100 bg-white">
-        <a href="#" class="flex items-center justify-center md:h-200">
+      <div id="fixed-menu" class="fixed top-0 bottom-0 flex flex-col md:w-24 bg-white">
+        <a href="#" class="flex items-center justify-center md:mt-5">
           <img
             src="../images/lopeseco_logo.png"
             class="md:h-48 bg-white"
             alt="Lopeseco"
           />
         </a>
-        <button id="menu-toggle" type="button" aria-label="toggle menu" class="flex items-center justify-center mt-20">
+        <button id="menu-toggle" type="button" aria-label="toggle menu" class="flex items-center justify-center md:mt-20">
       <span onclick="openMenu()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +147,7 @@
         </svg>
       </span>
     </button>
-    <div id="socials" class="flex flex-col gap-5 absolute bottom-10 left-40%">
+    <div id="socials" class="flex flex-col md:gap-5 absolute md:bottom-10 left-1/3">
       <a href="https://www.facebook.com/LopesecoDesignStudio" class="block m-auto">
       <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -192,15 +193,15 @@
       const menu = document.getElementById("menu");
 
       function openMenu(){
-        menuWrapper.style.transform='translateX(100px)';
+        menuWrapper.style.transform='translateX(96px)';
         menu.style.opacity='1';
-        topBannerOverlay.style.transform='translateX(250px)';
+        topBannerOverlay.style.transform='translateX(240px)';
       }
 
       function closeMenu(){
         menuWrapper.style.transform='translateX(-200px)';
         menu.style.opacity='0';
-        topBannerOverlay.style.transform='translateX(100px)';
+        topBannerOverlay.style.transform='translateX(96px)';
       }
 
       function onMouseOverImage(){
